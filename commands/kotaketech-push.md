@@ -9,7 +9,28 @@ Push the current branch to the remote repository.
    git branch -vv
    ```
 
-3. If the branch has no upstream, push with `-u`:
+3. Update or create `CHANGELOG.md` using the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format:
+
+   - Run `git log` to identify commits not yet reflected in the changelog. If the file doesn't exist, use all commits on the current branch since it diverged from the main branch (or all commits if on main).
+   - If `CHANGELOG.md` does not exist, create it with the standard header:
+     ```markdown
+     # Changelog
+
+     All notable changes to this project will be documented in this file.
+
+     The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+     and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+     ## [Unreleased]
+     ```
+   - Add or update the `## [Unreleased]` section at the top with entries grouped by type (`Added`, `Changed`, `Fixed`, `Removed`, `Security`, `Deprecated`) based on the commit messages.
+   - Stage and commit the changelog:
+     ```
+     git add CHANGELOG.md
+     git commit -m "docs: update CHANGELOG"
+     ```
+
+4. If the branch has no upstream, push with `-u`:
    ```
    git push -u origin <branch>
    ```
@@ -18,6 +39,6 @@ Push the current branch to the remote repository.
    git push
    ```
 
-4. Report success or surface any errors (rejected push, no permission, etc.).
+5. Report success or surface any errors (rejected push, no permission, etc.).
 
 > Note: Never force-push (`--force`) without explicit user instruction. Never push directly to `main` or `master` without confirmation.
