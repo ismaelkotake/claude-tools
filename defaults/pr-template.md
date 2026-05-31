@@ -1,5 +1,9 @@
 # PR Template
 
+## Language
+
+All PR/MR titles, descriptions, and comments must be written in **English**.
+
 ## Title format
 
 ```

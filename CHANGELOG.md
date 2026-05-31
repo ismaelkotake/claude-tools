@@ -10,3 +10,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add CHANGELOG.md update step before push in kotaketech-push skill
+- Enforce English in all commit messages, CHANGELOG entries, and PR/MR descriptions (77e0ecb)
+- Add remote platform detection (GitHub vs GitLab) to commit, push, and PR skills (77e0ecb)
+- Add target branch selection step to PR/MR creation skill (77e0ecb)
