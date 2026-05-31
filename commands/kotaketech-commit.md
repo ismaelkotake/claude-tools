@@ -40,6 +40,7 @@ Commit N/Total
 ### 4. Commit rules
 
 - Follow the rules loaded in step "Load rules"
+- **All commit messages must be written in English** — subject, body, and footer
 - **Never use `git add .` or `git add -A`** — always stage files by name
 - Never skip hooks (`--no-verify`)
 - Never amend published commits
@@ -60,6 +61,7 @@ If it exists:
 - Map the commit type to a changelog category using the rules from the commit-rules file
 - Add an entry under the appropriate subsection (`### Added`, `### Fixed`, `### Changed`, etc.)
 - Entry format: `- <subject line from the commit message> (<short hash>)`
+- **All CHANGELOG entries must be written in English**
 - If the commit type maps to "Omit", skip the changelog update for that commit
 - Stage `CHANGELOG.md` and amend it into the current commit:
   ```bash

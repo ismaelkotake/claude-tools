@@ -1,5 +1,9 @@
 # Commit Rules
 
+## Language
+
+All commit messages (subject, body, footer) must be written in **English**.
+
 ## Format
 
 ```
