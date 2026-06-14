@@ -32,3 +32,4 @@ echo "  /kotaketech-setup    — initialize a project with local rules/templates
 echo "  /kotaketech-commit   — smart grouped commits with CHANGELOG support"
 echo "  /kotaketech-push     — push current branch"
 echo "  /kotaketech-pr       — create PR with generated description"
+echo "  /kotaketech-review   — senior-engineer PR review using Claude Opus 4.8"
